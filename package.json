@@ -8,7 +8,8 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "build:prod": "cross-env NODE_ENV=production ng build --prod"
+    "build:ci": "ng build --prod --sourceMap=false --base-href /my-azure-app/",
+    "test:ci": "ng test --watch=false --code-coverage --source-map true"
   },
   "private": true,
   "dependencies": {
