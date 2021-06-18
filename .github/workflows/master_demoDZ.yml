@@ -53,4 +53,4 @@ jobs:
         app-name: 'DemoDZ'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_18b2d41494134a848b5889df00b6a6ee }}
-        package: .
+        package: dist
